@@ -1,6 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 from django.utils import timezone
+from cloudinary.models import CloudinaryField
 from django.utils.text import slugify
 from ckeditor.fields import RichTextField
 from ckeditor_uploader.fields import RichTextUploadingField
@@ -13,7 +14,7 @@ class Profile(models.Model):
 	first_name = models.CharField(max_length=200, blank=True, null=True)
 	last_name = models.CharField(max_length=200, blank=True, null=True)
 	email = models.CharField(max_length=200)
-	profile_pic = models.ImageField(null=True, blank=True, upload_to="images", default="/user.png")
+	profile_pic = CloudinaryField('profile_pics/', null=True, blank=True, default="/user.png")
 	bio = models.TextField(null=True, blank=True)
 	twitter = models.CharField(max_length=200,null=True, blank=True)
 
@@ -33,13 +34,15 @@ class Tag(models.Model):
 class Post(models.Model):
 	headline = models.CharField(max_length=200)
 	sub_headline = models.CharField(max_length=200, null=True, blank=True)
-	thumbnail = models.ImageField(null=True, blank=True, upload_to="images", default="/images/placeholder.png")
+	thumbnail = CloudinaryField('project_images/',null=True, blank=True, default="/images/placeholder.png")
 	body = RichTextUploadingField(null=True, blank=True)
 	created = models.DateTimeField(auto_now_add=True)
 	active = models.BooleanField(default=False)
 	featured = models.BooleanField(default=False)
 	tags = models.ManyToManyField(Tag, null=True, blank=True)
 	slug = models.SlugField(null=True, blank=True)
+	livesite = models.URLField(null=True, blank=True)
+	gh_site = models.URLField(null=True, blank=True)
 
 	def __str__(self):
 		return self.headline
