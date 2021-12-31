@@ -12,11 +12,12 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 
 import os
 
-# import cloudinary
-# import cloudinary.uploader
-# import cloudinary.api
+import cloudinary
+import cloudinary.uploader
+import cloudinary.api
 import dj_database_url
 from decouple import config,Csv
+import django_on_heroku
 
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -46,7 +47,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'base.apps.BaseConfig',
-
+    'cloudinary',
+    'cloudinary_storage',
     'crispy_forms',
     'django_filters',
     'ckeditor',
@@ -118,6 +120,7 @@ else:
 db_from_env = dj_database_url.config(conn_max_age=500)
 DATABASES['default'].update(db_from_env)
 
+# **********For sqlite3***********
 
 # DATABASES = {
 #     'default': {
@@ -167,6 +170,8 @@ USE_TZ = True
 STATIC_URL = '/static/'
 MEDIA_URL = '/images/'
 
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
 ]
@@ -193,14 +198,12 @@ CKEDITOR_CONFIGS = {
     },
 }
 
-AWS_QUERYSTRING_AUTH = False
 
-#STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
-#DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+# Configure Django App for Heroku.
+django_on_heroku.settings(locals())
 
-#AWS_ACCESS_KEY_ID = 'YOUR-AWS-ACCESS-KEY-ID'
-#AWS_SECRET_ACCESS_KEY = 'YOUR_AWS-SECRET-ACCESS-KEY'
-#AWS_STORAGE_BUCKET_NAME = 'YOU_BUCKET_NAME'
-
-#AWS_S3_FILE_OVERWRITE = False
-#AWS_DEFAULT_ACL = None
+cloudinary.config( 
+  cloud_name = "dim8pysls", 
+  api_key = "111589689929649", 
+  api_secret = "fICQAMAqo4kM-6a84vTPlUXtmtc",
+)
