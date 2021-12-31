@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+	<title>Levy Omolo</title>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-47692315-56"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-47692315-56');
+	</script>
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+
+	<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="{% static 'css/default.css' %}">
+	<link id="theme-style" rel="stylesheet" type="text/css" href="">
+</head>
+<body>
+	<style>
+		.resume-btn {
+			border-color: transparent;
+			border-radius: 15px;
+			background-color: transparent;
+			color: rgb(255, 255, 255);
+			text-align: center;
+		}
+		.resume-btn:hover{
+			background-color: rgb(85, 190, 171);
+			border-color: transparent;
+			color: black;
+		}
+
+	</style>
+	{% include 'base/navbar.html' %}
+
+	<section class="s1">
+		<div class="main-container">
+			<div class="greeting-wrapper">
+				<h1>Hi, I'm Levy Omolo</h1>
+			</div>
+
+
+			<div class="intro-wrapper">
+				
+
+				<div class="left-column">
+					<img id="profile_pic" src="{% static 'images/Levy.jpg' %}">
+					<h5 style="text-align: center;line-height: 0;">Personalize Theme</h5>
+
+					<div id="theme-options-wrapper">
+						<div data-mode="light" id="light-mode" class="theme-dot"></div>
+						<div data-mode="blue" id="blue-mode" class="theme-dot"></div>
+						<div data-mode="green" id="green-mode" class="theme-dot"></div>
+						<div data-mode="purple" id="purple-mode" class="theme-dot"></div>
+						<div data-mode="contrast" id="contrast-mode" class="theme-dot"></div>
+					</div>
+
+					<p id="settings-note">*Theme settings will be saved for<br>your next vist</p>
+				</div>
+
+				<div class="right-column">
+
+					<div id="preview-shadow">
+						<div id="preview">
+							<div id="corner-tl" class="corner"></div>
+							<div id="corner-tr" class="corner"></div>
+							<h3>What I Do</h3>
+							<p>I am a Full Stack Developer student, working on serious projects.</p>
+							<div id="corner-br" class="corner"></div>
+							<div id="corner-bl" class="corner"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="s2">
+		<div class="main-container">
+
+			<div class="about-wrapper">
+				<div class="about-me">
+					<h4>More about me</h4>
+
+					<p>I am an enthusiast of AI incapacitated by inadequate programming skills and resolved to take away the problem first.</p>
+
+					<p>This is how and why I landed or found myself here. I admit that I'm learning a lot.</p>
+
+
+					<hr>
+
+					<h4>TOP SKILLS</h4>
+
+					<p>Fullstack developer with primary focus on Django + Angular.</p>
+
+					<div id="skills">
+						<ul>
+							<Button class ="resume-btn" size="md"  target="_blank">
+								<Row>
+									<img src="/static/images/python.svg" alt="" height="25px" width="25px"> 
+									<span style="padding: 0px 5px; font-size: 25px;" >Python</span>
+								</Row>
+							</Button>
+							<li><img src="/static/images/python.svg" alt="" height="30px" width="30px"> Python</li>
+							<li><img src="/static/images/django.svg" alt="" height="30px" width="30px">Django</li>
+							<li><img src="/static/images/flask.svg" alt="" height="30px" width="30px">Flask</li>
+							<li><img src="/static/images/javascript.svg" alt="" height="30px" width="30px">JavaScript</li>
+							<li><img src="/static/images/jquery.svg" alt="" height="30px" width="30px">jQuery</li>
+							<li><img src="/static/images/angularjs.svg" alt="" height="30px" width="30px">Angular</li>
+							<li><img src="/static/images/postgresql.svg" alt="" height="30px" width="30px">Postgres</li>
+							<li><img src="/static/images/html-5.svg" alt="" height="30px" width="30px">HTML</li>
+							<li><img src="/static/images/css3.svg" alt="" height="30px" width="30px">CSS</li>
+							<li><img src="/static/images/bootstrap.svg" alt="" height="30px" width="30px">Bootstrap</li>
+						</ul>
+
+						<ul>
+							<li><img src="/static/images/git.svg" alt="" height="30px" width="30px">Git</li>
+							<li><img src="/static/images/github.svg" alt="" height="30px" width="30px">GitHub</li>
+							<li><img src="/static/images/postman.png" alt="" height="30px" width="30px">Postman</li>
+							<li><img src="/static/images/heroku.svg" alt="" height="30px" width="30px">Heroku</li>
+						</ul>
+
+					</div>
+					<p> <a target="_blank" href="{% static 'resume.pdf' %}">Check my Resume</a></p>
+
+					<!-- BUTTONS -->
+					<h3>My skills</h3>
+		<Button class ="resume-btn" size="md"  target="_blank">
+            <Row>
+                <img src="/static/images/python.svg" alt="" height="25px" width="25px"> 
+                <span style="padding: 0px 5px; font-size: 25px;" >Python</span>
+            </Row>
+        </Button>
+
+				</div>
+
+				
+				<div class="social-links">
+					<img id="social_img" src="{% static 'images/follow.jpg' %}">
+					<h3>Find me on Twitter & Github</h3>
+					<Button class ="resume-btn"   target="_blank">
+						<Row>
+							<a target="_blank" href="https://github.com/omololevy"><img src="/static/images/github.svg" alt="" height="30px" width="25px"> 
+							<span style="font-size: 20px;" > @Levy Cotech</span></a>
+						</Row>
+					</Button>
+					<a target="_blank" href="https://github.com/omololevy"><img src="/static/images/github.svg" alt="" height="30px" width="30px">GitHub: @Levy Cotech</a>
+					<br>
+					<a target="_blank" href="https://twitter.com/kaylor254"><img src="/static/images/twitter.svg" alt="" height="30px" width="30px">Twitter: @kaylor254</a>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<section class="s1">
+		<div class="main-container">
+			<h3 style="text-align: center;">My Sample Projects</h3>
+
+			<div class="post-wrapper">
+				{% for post in posts %}
+				<div>
+					<div class="post">
+						<img class="thumbnail" src="{{post.thumbnail.url}}">
+						<div class="post-preview">
+							<h6 class="post-title">{{post.headline}}</h6>
+							<p class="post-intro">{{post.sub_headline}}</p>
+							<a href="{%  url 'post' post.slug %}">Read More</a>
+						</div>
+					</div>
+				</div>
+				{% endfor %}
+			</div>
+
+			<p align="center">
+				<a href="{% url 'posts' %}">View More</a>
+			</p>
+		</div>
+	</section>
+	
+
+	<section class="s2">
+		<div class="main-container">
+			<a href=""></a>
+			<h3 style="text-align: center;">Contact Me</h3>
+
+			<form id="contact-form" method="POST" action="{% url 'send_email' %}">
+				{% csrf_token %}
+				<a name="contact"></a>
+
+				<label>Name</label>
+				<input required class="input-field" type="text" name="name">
+
+				<label>The Subject</label>
+				<input required class="input-field" type="text" name="subject">
+
+				<label>Email</label>
+				<input required class="input-field" type="text" name="email">
+
+				<label>The Message</label>
+				<textarea required class="input-field" name="message"></textarea>
+
+				<input id="submit-btn" type="submit" value="Send">
+			</form>
+		</div>
+	</section> 
+
+
+
+	<script type="text/javascript">
+		let static = "{% static 'css' %}"
+	</script>
+
+	<script type="text/javascript" src="{% static 'js/script.js' %}"></script>
+</body>
+</html>
