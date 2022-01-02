@@ -137,17 +137,6 @@ h6 { font-size: 16px;}
 	padding: 10px;
 }
 
-#dot-1{
-	background-color:  #FC6058;
-}
-
-#dot-2{
-	background-color:  #FEC02F;
-}
-
-#dot-3{
-	background-color:  #2ACA3E;
-}
 
 .browser-dot{
 	background-color: black;
@@ -408,12 +397,13 @@ h6 { font-size: 16px;}
 .tag{
 	display:inline-block;
 	color:#fff;
-	background-color: #888;
+	background-color: rgb(28, 152, 190);
 	border-radius: 5px;
 	margin: 2px;
 	padding: 2px 5px;
 	font-size: 12px;	
 }
+
 
 
 #contact-form{
