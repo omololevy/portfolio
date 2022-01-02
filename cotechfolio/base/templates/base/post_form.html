@@ -13,13 +13,13 @@
 	}
 </style>
 <div class="main-container">
-	<a class="btn btn-sm btn-primary" href="{% url 'posts' %}">&laquo Back to Posts</a>
+	<a class="btn btn-sm btn-primary" href="{% url 'posts' %}">&laquo Back to Projects</a>
 	
 	<form action="" method="POST" enctype="multipart/form-data">
 		{% csrf_token %}
 		{{form.media}}
 		{{form|crispy}}
-		<input class="btn btn-primary" type="submit" value="Submit Post">
+		<input class="btn btn-primary" type="submit" value="Save Changes">
 		
 	</form>
 </div>
