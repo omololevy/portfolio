@@ -2,7 +2,6 @@
 {% load static %}
 <html>
 <head>
-	<title>Levy Omolo</title>
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-47692315-56"></script>
@@ -23,6 +22,42 @@
 
 	<link rel="stylesheet" type="text/css" href="{% static 'css/default.css' %}">
 	<link id="theme-style" rel="stylesheet" type="text/css" href="">
+
+	<meta name="author" content="Levy Omolo Cotech" />
+	<!-- Theme Metadata -->
+	<meta name="theme-color" content="#222222" />
+	<!-- Keyword Metadata -->
+	<meta
+		name="keywords"
+		content="Levy Cotech, Levy Omolo Cotech, Levy Omolo Cotech Portfolio,
+		  Levy Omolo Cotech AI-ML, Levy Omolo Cotech Moringa, Levy
+		  Omolo Moringa School, Levy Omolo Maseno University, Levy Cotech
+		  Omolo Maseno, Levy Omolo Cotech SE, Levy Omolo Kenya,
+		  Levy Omolo Cotech, Levy Omolo Cotech Website, Cotech L Omolo"
+	/>
+	<!--OpenGraph Metadata-->
+	<!--OpenGraph Title-->
+	<meta name="title" property="og:title" content="Levy Omolo Cotech" />
+	<!--OpenGraph Description-->
+	<meta
+		name="description"
+		property="og:description"
+		content="Levy Omolo Cotech. Software Developer @ Moringa School, Computer Science @ Maseno University, Full-Stack Web
+		  Developer. I'm actively searching for Software Engineering and/or Web Development internships for
+		  2022!"
+	/>
+	<!--OpenGraph Type-->
+	<meta property="og:type" content="website" />
+	<!--OpenGraph Image-->
+	<meta name="image" property="og:image" content="https://avatars.githubusercontent.com/u/89441139?v=4" />
+	<!-- Webpage Logo -->
+	<title>Levy Omolo Cotech</title>
+	<link rel="icon" href="https://avatars.githubusercontent.com/u/89441139?v=4" />
+	<!--
+  manifest.json provides metadata used when your web app is installed on a
+  user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+-->
+
 </head>
 <body>
 	<style>
@@ -89,7 +124,7 @@
 
 			<div class="about-wrapper">
 				<div class="about-me">
-					<h4>More about me</h4>
+					<h4>About Me</h4>
 
 					<p>I am an enthusiast of AI incapacitated by inadequate programming skills and resolved to take away the problem first.</p>
 
@@ -170,11 +205,13 @@
 				{% for post in posts %}
 				<div>
 					<div class="post">
-						<img class="thumbnail" src="{{post.thumbnail.url}}">
+						<a href=" {{ post.livesite }}"><img class="thumbnail" src="{{post.thumbnail.url}}"></a>
 						<div class="post-preview">
 							<h6 class="post-title">{{post.headline}}</h6>
 							<p class="post-intro">{{post.sub_headline}}</p>
-							<a href="{%  url 'post' post.slug %}">Read More</a>
+							<a href="{%  url 'post' post.slug %}">Read More<b>...</b></a>
+							<a href=" {{ post.livesite }}" style="float: right; margin-left: 5px;"><img src="https://img.icons8.com/color/48/000000/domain.png" alt="" height="30px" width="30px"/></a>
+							<a href="{{ post.GitHub }} " style="float: right;"><img src="/static/images/github.svg" alt="" height="30px" width="30px"></a>
 						</div>
 					</div>
 				</div>
