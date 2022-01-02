@@ -14,7 +14,7 @@ class Profile(models.Model):
 	first_name = models.CharField(max_length=200, blank=True, null=True)
 	last_name = models.CharField(max_length=200, blank=True, null=True)
 	email = models.CharField(max_length=200)
-	profile_pic = CloudinaryField('profile_pics/', null=True, blank=True, default="/user.png")
+	profile_pic = CloudinaryField('profile_pics/', null=True, blank=True, default="http://res.cloudinary.com/dim8pysls/image/upload/v1639001486/x3mgnqmbi73lten4ewzv.png")
 	bio = models.TextField(null=True, blank=True)
 	twitter = models.CharField(max_length=200,null=True, blank=True)
 
@@ -41,8 +41,8 @@ class Post(models.Model):
 	featured = models.BooleanField(default=False)
 	tags = models.ManyToManyField(Tag, null=True, blank=True)
 	slug = models.SlugField(null=True, blank=True)
-	livesite = models.URLField(null=True, blank=True)
-	gh_site = models.URLField(null=True, blank=True)
+	livesite = models.URLField(null=False, blank=False, default="https://github.com/omololevy")
+	GitHub = models.URLField(null=False, blank=False, default="https://github.com/")
 
 	def __str__(self):
 		return self.headline
