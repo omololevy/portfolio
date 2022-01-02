@@ -408,7 +408,7 @@ h6 { font-size: 16px;}
 .tag{
 	display:inline-block;
 	color:#fff;
-	background-color: #888;
+	background-color: rgb(28, 152, 190);
 	border-radius: 5px;
 	margin: 2px;
 	padding: 2px 5px;
