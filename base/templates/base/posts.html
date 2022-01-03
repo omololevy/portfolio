@@ -13,6 +13,9 @@
 		padding: 5px;
 		border: 1px solid #888;
 	}
+	a {
+		text-decoration: none;
+	}
 </style>
 
 <div class="main-container">
@@ -115,5 +118,17 @@
 
 	}
 </script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
 
+	gtag('config', 'UA-47692315-56');
+  </script>
+
+<script type="text/javascript">
+	let static = "{% static 'css' %}"
+</script>
+
+<script type="text/javascript" src="{% static 'js/script.js' %}"></script>
 {% endblock content %}
