@@ -5,7 +5,7 @@
 	--borderColor:#161914;
 
 	--mainText:#fff;
-	--secondaryText:#eeeeee;
+	--secondaryText:hsl(64, 96%, 50%);
 
 	--themeDotBorder:#FFF;
 
@@ -16,4 +16,119 @@
 	--buttonColor:#669966;
 
 
+}
+
+html, body{
+	padding: 0;
+	margin: 0;
+	scroll-behavior: smooth;
+	background-color: var(--mainColor);
+}
+
+body *{
+	transition: 0.3s;
+}
+
+
+h1, h2, h3, h4, h5, h6, strong{
+	color: var(--mainText);
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-weight: 500;
+}
+
+p, li, span, label, input, textarea{
+	color: var(--secondaryText);
+	font-family: 'Roboto Mono', monospace;
+}
+
+a{
+	text-decoration: none;
+	color:#17a2b8;
+}
+
+ul{
+	list-style: none;
+}
+
+h1 { font-size: 56px;}
+h2 { font-size: 36px;}
+h3 { font-size: 28px;}
+h4 { font-size: 24px;}
+h5 { font-size: 20px;}
+h6 { font-size: 16px;}
+
+
+.s1{
+	background-color: var(--mainColor);
+	border-bottom:1px solid var(--borderColor);
+	overflow:auto;
+}
+
+.s2{
+	background-color: var(--secondaryColor);
+	border-bottom:1px solid var(--borderColor);
+	overflow:auto;
+}
+
+
+
+
+.main-container{
+	width: 1200px;
+	margin: 0 auto;
+	background-color: var(--mainColor);
+}
+
+
+.greeting-wrapper{
+	display: grid;
+	text-align: center;
+	align-content: center;
+	min-height: 10em;
+
+}
+
+.intro-wrapper{
+	background-color: var(--secondaryColor);
+	border:1px solid var(--borderColor);
+	border-radius:5px 5px 0 0;
+
+
+	-webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+	-moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+	box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas: 
+		'nav-wrapper nav-wrapper'
+		'left-column right-column'
+	;
+}
+
+
+.nav-wrapper{
+	border-radius:5px 5px 0 0;
+	grid-area:nav-wrapper;
+	border-bottom: 1px solid var(--borderColor);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: var(--mainColor);
+}
+
+#navigation a{
+	color:var(--mainText);
+}
+
+
+#navigation{
+	margin:0;
+	padding: 10px;
+}
+
+#navigation li{
+	display: inline-block;
+	margin-right: 5px;
+	margin-left:5px;
 }
