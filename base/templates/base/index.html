@@ -17,7 +17,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
 
 	<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
-
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Sansita&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet">
 
 	<link rel="stylesheet" type="text/css" href="{% static 'css/default.css' %}">
@@ -52,17 +53,27 @@
 	<meta name="image" property="og:image" content="https://avatars.githubusercontent.com/u/89441139?v=4" />
 	<!-- Webpage Logo -->
 	<title>Levy Omolo Cotech</title>
-	<link rel="icon" href="https://avatars.githubusercontent.com/u/89441139?v=4" />
-	<!--
-  manifest.json provides metadata used when your web app is installed on a
-  user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
--->
-
+	<link rel="icon" style="border-radius: 50%;" href="https://avatars.githubusercontent.com/u/89441139?v=4" />
+	    <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/61d08b4d80b2296cfdd49e96/1foba0as1';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
 </head>
 <body>
 	<style>
 		.resume-btn {
-			border-color: transparent;
+			border-color: cyan;
+			margin-left: 4px;
+			margin-top: 6px;
 			border-radius: 15px;
 			background-color: transparent;
 			color: rgb(255, 255, 255);
@@ -76,7 +87,7 @@
 
 	</style>
 	{% include 'base/navbar.html' %}
-
+	
 	<section class="s1">
 		<div class="main-container">
 			<div class="greeting-wrapper">
@@ -91,13 +102,7 @@
 					<img id="profile_pic" src="{% static 'images/Levy.jpg' %}">
 					<h5 style="text-align: center;line-height: 0;">Personalize Theme</h5>
 
-					<div id="theme-options-wrapper">
-						<div data-mode="light" id="light-mode" class="theme-dot"></div>
-						<div data-mode="blue" id="blue-mode" class="theme-dot"></div>
-						<div data-mode="green" id="green-mode" class="theme-dot"></div>
-						<div data-mode="purple" id="purple-mode" class="theme-dot"></div>
-						<div data-mode="contrast" id="contrast-mode" class="theme-dot"></div>
-					</div>
+					
 
 					<p id="settings-note">*Theme settings will be saved for<br>your next vist</p>
 				</div>
@@ -138,14 +143,75 @@
 					<p>Fullstack developer with primary focus on Django + Angular.</p>
 
 					<div id="skills">
-						<ul>
+						<ul> 
+							<h4>Languages and Frameworks</h4>
 							<Button class ="resume-btn" size="md"  target="_blank">
 								<Row>
 									<img src="/static/images/python.svg" alt="" height="25px" width="25px"> 
 									<span style="padding: 0px 5px; font-size: 25px;" >Python</span>
 								</Row>
 							</Button>
-							<li><img src="/static/images/python.svg" alt="" height="30px" width="30px"> Python</li>
+							<Button class ="resume-btn" size="md"  target="_blank">
+								<Row>
+									<img src="https://img.icons8.com/external-tal-revivo-filled-tal-revivo/96/000000/external-django-a-high-level-python-web-framework-that-encourages-rapid-development-logo-filled-tal-revivo.png" alt="" height="25px" width="25px"> 
+									<span style="padding: 0px 5px; font-size: 25px;" >Django</span>
+								</Row>
+							</Button>
+							<Button class ="resume-btn" size="md"  target="_blank">
+								<Row>
+									<img src="https://img.icons8.com/ios/100/000000/flask.png" alt="" height="30px" width="30px"> 
+									<span style="padding: 0px 5px; font-size: 25px;" >Flask</span>
+								</Row>
+							</Button>
+							<Button class ="resume-btn" size="md"  target="_blank">
+								<Row>
+									<img src="/static/images/javascript.svg" alt="" height="25px" width="25px"> 
+									<span style="padding: 0px 5px; font-size: 25px;" >Javascript</span>
+								</Row>
+							</Button>
+							<Button class ="resume-btn" size="md"  target="_blank">
+								<Row>
+									<img src="/static/images/jquery.svg" alt="" height="25px" width="25px"> 
+									<span style="padding: 0px 5px; font-size: 25px;" >JQuery</span>
+								</Row>
+							</Button>
+							<Button class ="resume-btn" size="md"  target="_blank">
+								<Row>
+									<img src="/static/images/angularjs.svg" alt="" height="25px" width="25px"> 
+									<span style="padding: 0px 5px; font-size: 25px;" >Angular</span>
+								</Row>
+							</Button>
+							<Button class ="resume-btn" size="md"  target="_blank">
+								<Row>
+									<img src="/static/images/postgresql.svg" alt="" height="25px" width="25px"> 
+									<span style="padding: 0px 5px; font-size: 25px;" >Postgresql</span>
+								</Row>
+							</Button>
+							<Button class ="resume-btn" size="md"  target="_blank">
+								<Row>
+									<img src="/static/images/html-5.svg" alt="" height="25px" width="25px"> 
+									<span style="padding: 0px 5px; font-size: 25px;" >HTML</span>
+								</Row>
+							</Button>
+							<Button class ="resume-btn" size="md"  target="_blank">
+								<Row>
+									<img src="/static/images/css3.svg" alt="" height="25px" width="25px"> 
+									<span style="padding: 0px 5px; font-size: 25px;" >CSS</span>
+								</Row>
+							</Button>
+							<Button class ="resume-btn" size="md"  target="_blank">
+								<Row>
+									<img src="/static/images/bootstrap.svg" alt="" height="25px" width="25px"> 
+									<span style="padding: 0px 5px; font-size: 25px;" >Bootstrap</span>
+								</Row>
+							</Button>
+							<Button class ="resume-btn" size="md"  target="_blank">
+								<Row>
+									<img src="https://img.icons8.com/color/48/000000/typescript.png" alt="" height="25px" width="25px"> 
+									<span style="padding: 0px 5px; font-size: 25px;" >Typescript</span>
+								</Row>
+							</Button>
+							<!-- <li><img src="/static/images/python.svg" alt="" height="30px" width="30px"> Python</li>
 							<li><img src="/static/images/django.svg" alt="" height="30px" width="30px">Django</li>
 							<li><img src="/static/images/flask.svg" alt="" height="30px" width="30px">Flask</li>
 							<li><img src="/static/images/javascript.svg" alt="" height="30px" width="30px">JavaScript</li>
@@ -154,27 +220,44 @@
 							<li><img src="/static/images/postgresql.svg" alt="" height="30px" width="30px">Postgres</li>
 							<li><img src="/static/images/html-5.svg" alt="" height="30px" width="30px">HTML</li>
 							<li><img src="/static/images/css3.svg" alt="" height="30px" width="30px">CSS</li>
-							<li><img src="/static/images/bootstrap.svg" alt="" height="30px" width="30px">Bootstrap</li>
-						</ul>
+							<li><img src="/static/images/bootstrap.svg" alt="" height="30px" width="30px">Bootstrap</li> -->
+						</ul> <br>
 
-						<ul>
-							<li><img src="/static/images/git.svg" alt="" height="30px" width="30px">Git</li>
+						<ul> <h4>Tools</h4>
+							<Button class ="resume-btn" size="md"  target="_blank">
+								<Row>
+									<img src="/static/images/git.svg" alt="" height="25px" width="25px"> 
+									<span style="padding: 0px 5px; font-size: 25px;" >Git</span>
+								</Row>
+							</Button>
+							<Button class ="resume-btn" size="md"  target="_blank">
+								<Row>
+									<img src="/static/images/github.svg" alt="" height="25px" width="25px"> 
+									<span style="padding: 0px 5px; font-size: 25px;" >GitHub</span>
+								</Row>
+							</Button>
+							<Button class ="resume-btn" size="md"  target="_blank">
+								<Row>
+									<img src="/static/images/heroku.svg" alt="" height="25px" width="25px"> 
+									<span style="padding: 0px 5px; font-size: 25px;" >Heroku</span>
+								</Row>
+							</Button>
+							<Button class ="resume-btn" size="md"  target="_blank">
+								<Row>
+									<img src="/static/images/postman.png" alt="" height="25px" width="25px"> 
+									<span style="padding: 0px 5px; font-size: 25px;" >Postman</span>
+								</Row>
+							</Button>
+							<!-- <li><img src="/static/images/git.svg" alt="" height="30px" width="30px">Git</li>
 							<li><img src="/static/images/github.svg" alt="" height="30px" width="30px">GitHub</li>
 							<li><img src="/static/images/postman.png" alt="" height="30px" width="30px">Postman</li>
-							<li><img src="/static/images/heroku.svg" alt="" height="30px" width="30px">Heroku</li>
+							<li><img src="/static/images/heroku.svg" alt="" height="30px" width="30px">Heroku</li> -->
 						</ul>
 
 					</div>
-					<p> <a target="_blank" href="{% static 'resume.pdf' %}">Check my Resume</a></p>
+					<p> <a target="_blank" href="{% static 'resume.pdf' %}">Check my Résumé</a></p>
 
-					<!-- BUTTONS -->
-					<h3>My skills</h3>
-		<Button class ="resume-btn" size="md"  target="_blank">
-            <Row>
-                <img src="/static/images/python.svg" alt="" height="25px" width="25px"> 
-                <span style="padding: 0px 5px; font-size: 25px;" >Python</span>
-            </Row>
-        </Button>
+					
 
 				</div>
 
@@ -182,15 +265,10 @@
 				<div class="social-links">
 					<img id="social_img" src="{% static 'images/follow.jpg' %}">
 					<h3>Find me on Twitter & Github</h3>
-					<Button class ="resume-btn"   target="_blank">
-						<Row>
-							<a target="_blank" href="https://github.com/omololevy"><img src="/static/images/github.svg" alt="" height="30px" width="25px"> 
-							<span style="font-size: 20px;" > @Levy Cotech</span></a>
-						</Row>
-					</Button>
-					<a target="_blank" href="https://github.com/omololevy"><img src="/static/images/github.svg" alt="" height="30px" width="30px">GitHub: @Levy Cotech</a>
+					
+					<a target="_blank" href="https://github.com/omololevy"><img src="/static/images/github.svg" alt="" height="30px" width="30px"> @Levy Cotech</a>
 					<br>
-					<a target="_blank" href="https://twitter.com/kaylor254"><img src="/static/images/twitter.svg" alt="" height="30px" width="30px">Twitter: @kaylor254</a>
+					<a target="_blank" href="https://twitter.com/kaylor254"><img src="/static/images/twitter.svg" alt="" height="30px" width="30px"> @kaylor254</a>
 				</div>
 			</div>
 
