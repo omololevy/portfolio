@@ -22,6 +22,7 @@ html, body{
 	padding: 0;
 	margin: 0;
 	scroll-behavior: smooth;
+	background-color: var(--mainColor);
 }
 
 body *{
@@ -31,13 +32,13 @@ body *{
 
 h1, h2, h3, h4, h5, h6, strong{
 	color: var(--mainText);
-	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-family: 'Lobster', cursive;
 	font-weight: 500;
 }
 
 p, li, span, label, input, textarea{
 	color: var(--secondaryText);
-	font-family: 'Roboto Mono', monospace;
+	font-family: 'Sansita', sans-serif;
 }
 
 a{
@@ -75,6 +76,7 @@ h6 { font-size: 16px;}
 .main-container{
 	width: 1200px;
 	margin: 0 auto;
+	background-color: var(--mainColor);
 }
 
 
