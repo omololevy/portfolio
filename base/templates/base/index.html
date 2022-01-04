@@ -211,16 +211,6 @@
 									<span style="padding: 0px 5px; font-size: 25px;" >Typescript</span>
 								</Row>
 							</Button>
-							<!-- <li><img src="/static/images/python.svg" alt="" height="30px" width="30px"> Python</li>
-							<li><img src="/static/images/django.svg" alt="" height="30px" width="30px">Django</li>
-							<li><img src="/static/images/flask.svg" alt="" height="30px" width="30px">Flask</li>
-							<li><img src="/static/images/javascript.svg" alt="" height="30px" width="30px">JavaScript</li>
-							<li><img src="/static/images/jquery.svg" alt="" height="30px" width="30px">jQuery</li>
-							<li><img src="/static/images/angularjs.svg" alt="" height="30px" width="30px">Angular</li>
-							<li><img src="/static/images/postgresql.svg" alt="" height="30px" width="30px">Postgres</li>
-							<li><img src="/static/images/html-5.svg" alt="" height="30px" width="30px">HTML</li>
-							<li><img src="/static/images/css3.svg" alt="" height="30px" width="30px">CSS</li>
-							<li><img src="/static/images/bootstrap.svg" alt="" height="30px" width="30px">Bootstrap</li> -->
 						</ul> <br>
 
 						<ul> <h4>Tools</h4>
@@ -233,25 +223,22 @@
 							<Button class ="resume-btn" size="md"  target="_blank">
 								<Row>
 									<img src="/static/images/github.svg" alt="" height="25px" width="25px"> 
-									<span style="padding: 0px 5px; font-size: 25px;" >GitHub</span>
+									<span style="padding: 0px 5px; font-size: 20px;" >GitHub</span>
 								</Row>
 							</Button>
 							<Button class ="resume-btn" size="md"  target="_blank">
 								<Row>
 									<img src="/static/images/heroku.svg" alt="" height="25px" width="25px"> 
-									<span style="padding: 0px 5px; font-size: 25px;" >Heroku</span>
+									<span style="padding: 0px 5px; font-size: 20px;" >Heroku</span>
 								</Row>
 							</Button>
 							<Button class ="resume-btn" size="md"  target="_blank">
 								<Row>
 									<img src="/static/images/postman.png" alt="" height="25px" width="25px"> 
-									<span style="padding: 0px 5px; font-size: 25px;" >Postman</span>
+									<span style="padding: 0px 5px; font-size: 20px;" >Postman</span>
 								</Row>
 							</Button>
-							<!-- <li><img src="/static/images/git.svg" alt="" height="30px" width="30px">Git</li>
-							<li><img src="/static/images/github.svg" alt="" height="30px" width="30px">GitHub</li>
-							<li><img src="/static/images/postman.png" alt="" height="30px" width="30px">Postman</li>
-							<li><img src="/static/images/heroku.svg" alt="" height="30px" width="30px">Heroku</li> -->
+							
 						</ul>
 
 					</div>
@@ -263,12 +250,18 @@
 
 				
 				<div class="social-links">
-					<img id="social_img" src="{% static 'images/follow.jpg' %}">
+					<img id="social_img" src="{% static 'images/follow.jpg' %}"> <br> <br>
+					<div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="dark" data-type="HORIZONTAL" data-vanity="levy-omolo-43236222a" data-version="v1">
+						
+					</div>
+              
 					<h3>Find me on Twitter & Github</h3>
 					
-					<a target="_blank" href="https://github.com/omololevy"><img src="/static/images/github.svg" alt="" height="30px" width="30px"> @Levy Cotech</a>
+					<a target="_blank" href="https://github.com/omololevy"><img src="/static/images/github.svg" alt="" height="30px" width="30px"><br> @Levy Cotech</a><br>
 					<br>
-					<a target="_blank" href="https://twitter.com/kaylor254"><img src="/static/images/twitter.svg" alt="" height="30px" width="30px"> @kaylor254</a>
+					<a target="_blank" href="https://twitter.com/kaylor254"><img src="/static/images/twitter.svg" alt="" height="30px" width="30px"> <br> @kaylor254</a><br>
+					
+
 				</div>
 			</div>
 
@@ -334,6 +327,7 @@
 	<script type="text/javascript">
 		let static = "{% static 'css' %}"
 	</script>
+	<script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
 
 	<script type="text/javascript" src="{% static 'js/script.js' %}"></script>
 </body>
