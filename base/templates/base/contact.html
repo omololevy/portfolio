@@ -1,0 +1,46 @@
+{% include 'base/main.html' %}
+{% load static %}
+{% block content %}
+
+<style type="text/css">
+	#user_pic{
+		height: 200px;
+		width: 200px;
+		border-radius: 50%;
+		border:5px solid #888;
+		margin:0 auto;
+		object-fit: cover;
+	}
+
+	#user-info-box{
+		text-align: center;
+	}
+</style>
+
+<section class="s2">
+	<div class="main-container">
+		<a href=""></a>
+		<h3 style="text-align: center;">Contact Me</h3>
+
+		<form id="contact-form" method="POST" action="{% url 'send_email' %}">
+			{% csrf_token %}
+			<a name="contact"></a>
+
+			<label>Name</label>
+			<input required class="input-field" type="text" name="name">
+
+			<label>The Subject</label>
+			<input required class="input-field" type="text" name="subject">
+
+			<label>Email</label>
+			<input required class="input-field" type="text" name="email">
+
+			<label>The Message</label>
+			<textarea required class="input-field" name="message"></textarea>
+
+			<input id="submit-btn" type="submit" value="Send">
+		</form>
+	</div>
+</section> 
+
+{% endblock content %}
