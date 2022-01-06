@@ -7,12 +7,13 @@ A Python-Django portfolio website about me, my career journey and projects that 
 
 ## Project live sites
   * This is the live [link to the repo ](https://github.com/omololevy/my-portfolio) <br>
-  * This is the live [link to the app ](https://levy-portfolio.herokuapp.com/)
+  * This is the live [link to the app ](https://levyportfolio.herokuapp.com/)
 
 
 ## Homepage Previews
-The app looks like this: 
-  ![Image]()
+The portfolio looks like this: 
+
+  ![Image](/static/images/demoport.png)
 
 
 ## Author
@@ -22,6 +23,7 @@ The app looks like this:
 
 * Python3
 * Django 4.0
+* Javascript
 * Bootstrap
 * PostgreSQL
 * CSS
