@@ -13,6 +13,7 @@
 		padding: 5px;
 		border: 1px solid #888;
 	}
+
 	a {
 		text-decoration: none;
 	}
@@ -21,7 +22,7 @@
 <div class="main-container">
 	<h1>Projects</h1>
 	{% if request.user.is_staff %}
-	<a class="btn btn-warning" href="{% url 'create_post' %}">Create Post</a>
+	<a class="btn btn-info" href="{% url 'create_post' %}">Create Post</a>
 	{% endif %}
 	<form id="searchForm" method="GET">
 		{{myFilter.form|crispy}}
@@ -98,10 +99,7 @@
 		{% endif %}
 	</div>
 </div>
-
-
-
-
+<!-- JAVASCRIPTS -->
 <script type="text/javascript">
 	let searchForm = document.getElementById('searchForm')
 	let pageLinks = document.getElementsByClassName('page-link')
@@ -120,11 +118,14 @@
 </script>
 <script>
 	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
+
+	function gtag() {
+		dataLayer.push(arguments);
+	}
 	gtag('js', new Date());
 
 	gtag('config', 'UA-47692315-56');
-  </script>
+</script>
 
 <script type="text/javascript">
 	let static = "{% static 'css' %}"
