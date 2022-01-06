@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 {% load static %}
 <html>
+
 <head>
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-47692315-56"></script>
 	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
+		window.dataLayer = window.dataLayer || [];
 
-	  gtag('config', 'UA-47692315-56');
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-47692315-56');
 	</script>
 
 
@@ -19,7 +23,8 @@
 	<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Sansita&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap"
+		rel="stylesheet">
 
 	<link rel="stylesheet" type="text/css" href="{% static 'css/default.css' %}">
 	<link id="theme-style" rel="stylesheet" type="text/css" href="">
@@ -28,25 +33,18 @@
 	<!-- Theme Metadata -->
 	<meta name="theme-color" content="#222222" />
 	<!-- Keyword Metadata -->
-	<meta
-		name="keywords"
-		content="Levy Cotech, Levy Omolo Cotech, Levy Omolo Cotech Portfolio,
+	<meta name="keywords" content="Levy Cotech, Levy Omolo Cotech, Levy Omolo Cotech Portfolio,
 		  Levy Omolo Cotech AI-ML, Levy Omolo Cotech Moringa, Levy
 		  Omolo Moringa School, Levy Omolo Maseno University, Levy Cotech
 		  Omolo Maseno, Levy Omolo Cotech SE, Levy Omolo Kenya,
-		  Levy Omolo Cotech, Levy Omolo Cotech Website, Cotech L Omolo"
-	/>
+		  Levy Omolo Cotech, Levy Omolo Cotech Website, Cotech L Omolo" />
 	<!--OpenGraph Metadata-->
 	<!--OpenGraph Title-->
 	<meta name="title" property="og:title" content="Levy Omolo Cotech" />
 	<!--OpenGraph Description-->
-	<meta
-		name="description"
-		property="og:description"
-		content="Levy Omolo Cotech. Software Developer @ Moringa School, Computer Science @ Maseno University, Full-Stack Web
+	<meta name="description" property="og:description" content="Levy Omolo Cotech. Software Developer @ Moringa School, Computer Science @ Maseno University, Full-Stack Web
 		  Developer. I'm actively searching for Software Engineering and/or Web Development internships for
-		  2022!"
-	/>
+		  2022!" />
 	<!--OpenGraph Type-->
 	<meta property="og:type" content="website" />
 	<!--OpenGraph Image-->
@@ -54,20 +52,23 @@
 	<!-- Webpage Logo -->
 	<title>Levy Omolo Cotech</title>
 	<link rel="icon" style="border-radius: 50%;" href="https://avatars.githubusercontent.com/u/89441139?v=4" />
-	    <!--Start of Tawk.to Script-->
-<script type="text/javascript">
-    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-    (function(){
-    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-    s1.async=true;
-    s1.src='https://embed.tawk.to/61d08b4d80b2296cfdd49e96/1foba0as1';
-    s1.charset='UTF-8';
-    s1.setAttribute('crossorigin','*');
-    s0.parentNode.insertBefore(s1,s0);
-    })();
-    </script>
-    <!--End of Tawk.to Script-->
+	<!--Start of Tawk.to Script-->
+	<script type="text/javascript">
+		var Tawk_API = Tawk_API || {},
+			Tawk_LoadStart = new Date();
+		(function () {
+			var s1 = document.createElement("script"),
+				s0 = document.getElementsByTagName("script")[0];
+			s1.async = true;
+			s1.src = 'https://embed.tawk.to/61d08b4d80b2296cfdd49e96/1foba0as1';
+			s1.charset = 'UTF-8';
+			s1.setAttribute('crossorigin', '*');
+			s0.parentNode.insertBefore(s1, s0);
+		})();
+	</script>
+	<!--End of Tawk.to Script-->
 </head>
+
 <body>
 	<style>
 		.resume-btn {
@@ -79,15 +80,15 @@
 			color: rgb(255, 255, 255);
 			text-align: center;
 		}
-		.resume-btn:hover{
+
+		.resume-btn:hover {
 			background-color: rgb(85, 190, 171);
 			border-color: transparent;
 			color: black;
 		}
-
 	</style>
 	{% include 'base/navbar.html' %}
-	
+
 	<section class="s1">
 		<div class="main-container">
 			<div class="greeting-wrapper">
@@ -96,12 +97,13 @@
 
 
 			<div class="intro-wrapper">
-				
+
 
 				<div class="left-column">
 					<img id="profile_pic" src="{% static 'images/Levy.jpg' %}">
 					<h5 style="text-align: center;line-height: 0;">Levy Omolo</h5>
-					<h5 id="settings-note">A Full Stack Developer working on serious websites <br> and web app development</h5>
+					<h5 id="settings-note">A Full Stack Developer working on serious websites <br> and web app
+						development</h5>
 				</div>
 
 				<div class="right-column">
@@ -128,137 +130,143 @@
 				<div class="about-me">
 					<h4>About Me</h4>
 
-					<p>I am an enthusiast of AI incapacitated by inadequate programming skills and resolved to take away the problem first.</p>
+					<p>I am an enthusiast of AI incapacitated by inadequate programming skills and resolved to take away
+						the problem first.</p>
 
 					<p>This is how and why I landed or found myself here. I admit that I'm learning a lot.</p>
-
-
 					<hr>
 
 					<h4>TOP SKILLS</h4>
-
 					<p>Full Stack developer with primary focus on Django + Angular.</p>
-
 					<div id="skills">
-						<ul> 
+						<ul>
 							<h4>Languages and Frameworks</h4>
-							<Button class ="resume-btn" size="md"  target="_blank">
+							<Button class="resume-btn" size="md" target="_blank">
 								<Row>
-									<img src="/static/images/python.svg" alt="" height="25px" width="25px"> 
-									<span style="padding: 0px 5px; font-size: 25px;" >Python</span>
+									<img src="/static/images/python.svg" alt="" height="25px" width="25px">
+									<span style="padding: 0px 5px; font-size: 25px;">Python</span>
 								</Row>
 							</Button>
-							<Button class ="resume-btn" size="md"  target="_blank">
+							<Button class="resume-btn" size="md" target="_blank">
 								<Row>
-									<img src="https://img.icons8.com/external-tal-revivo-filled-tal-revivo/96/000000/external-django-a-high-level-python-web-framework-that-encourages-rapid-development-logo-filled-tal-revivo.png" alt="" height="25px" width="25px"> 
-									<span style="padding: 0px 5px; font-size: 25px;" >Django</span>
+									<img src="https://img.icons8.com/external-tal-revivo-filled-tal-revivo/96/000000/external-django-a-high-level-python-web-framework-that-encourages-rapid-development-logo-filled-tal-revivo.png"
+										alt="" height="25px" width="25px">
+									<span style="padding: 0px 5px; font-size: 25px;">Django</span>
 								</Row>
 							</Button>
-							<Button class ="resume-btn" size="md"  target="_blank">
+							<Button class="resume-btn" size="md" target="_blank">
 								<Row>
-									<img src="https://img.icons8.com/ios/100/000000/flask.png" alt="" height="30px" width="30px"> 
-									<span style="padding: 0px 5px; font-size: 25px;" >Flask</span>
+									<img src="https://img.icons8.com/ios/100/000000/flask.png" alt="" height="30px"
+										width="30px">
+									<span style="padding: 0px 5px; font-size: 25px;">Flask</span>
 								</Row>
 							</Button>
-							<Button class ="resume-btn" size="md"  target="_blank">
+							<Button class="resume-btn" size="md" target="_blank">
 								<Row>
-									<img src="/static/images/javascript.svg" alt="" height="25px" width="25px"> 
-									<span style="padding: 0px 5px; font-size: 25px;" >Javascript</span>
+									<img src="/static/images/javascript.svg" alt="" height="25px" width="25px">
+									<span style="padding: 0px 5px; font-size: 25px;">Javascript</span>
 								</Row>
 							</Button>
-							<Button class ="resume-btn" size="md"  target="_blank">
+							<Button class="resume-btn" size="md" target="_blank">
 								<Row>
-									<img src="/static/images/jquery.svg" alt="" height="25px" width="25px"> 
-									<span style="padding: 0px 5px; font-size: 25px;" >JQuery</span>
+									<img src="/static/images/jquery.svg" alt="" height="25px" width="25px">
+									<span style="padding: 0px 5px; font-size: 25px;">JQuery</span>
 								</Row>
 							</Button>
-							<Button class ="resume-btn" size="md"  target="_blank">
+							<Button class="resume-btn" size="md" target="_blank">
 								<Row>
-									<img src="/static/images/angularjs.svg" alt="" height="25px" width="25px"> 
-									<span style="padding: 0px 5px; font-size: 25px;" >Angular</span>
+									<img src="/static/images/angularjs.svg" alt="" height="25px" width="25px">
+									<span style="padding: 0px 5px; font-size: 25px;">Angular</span>
 								</Row>
 							</Button>
-							<Button class ="resume-btn" size="md"  target="_blank">
+							<Button class="resume-btn" size="md" target="_blank">
 								<Row>
-									<img src="/static/images/postgresql.svg" alt="" height="25px" width="25px"> 
-									<span style="padding: 0px 5px; font-size: 25px;" >Postgresql</span>
+									<img src="/static/images/postgresql.svg" alt="" height="25px" width="25px">
+									<span style="padding: 0px 5px; font-size: 25px;">Postgresql</span>
 								</Row>
 							</Button>
-							<Button class ="resume-btn" size="md"  target="_blank">
+							<Button class="resume-btn" size="md" target="_blank">
 								<Row>
-									<img src="/static/images/html-5.svg" alt="" height="25px" width="25px"> 
-									<span style="padding: 0px 5px; font-size: 25px;" >HTML</span>
+									<img src="/static/images/html-5.svg" alt="" height="25px" width="25px">
+									<span style="padding: 0px 5px; font-size: 25px;">HTML</span>
 								</Row>
 							</Button>
-							<Button class ="resume-btn" size="md"  target="_blank">
+							<Button class="resume-btn" size="md" target="_blank">
 								<Row>
-									<img src="/static/images/css3.svg" alt="" height="25px" width="25px"> 
-									<span style="padding: 0px 5px; font-size: 25px;" >CSS</span>
+									<img src="/static/images/css3.svg" alt="" height="25px" width="25px">
+									<span style="padding: 0px 5px; font-size: 25px;">CSS</span>
 								</Row>
 							</Button>
-							<Button class ="resume-btn" size="md"  target="_blank">
+							<Button class="resume-btn" size="md" target="_blank">
 								<Row>
-									<img src="/static/images/bootstrap.svg" alt="" height="25px" width="25px"> 
-									<span style="padding: 0px 5px; font-size: 25px;" >Bootstrap</span>
+									<img src="/static/images/bootstrap.svg" alt="" height="25px" width="25px">
+									<span style="padding: 0px 5px; font-size: 25px;">Bootstrap</span>
 								</Row>
 							</Button>
-							<Button class ="resume-btn" size="md"  target="_blank">
+							<Button class="resume-btn" size="md" target="_blank">
 								<Row>
-									<img src="https://img.icons8.com/color/48/000000/typescript.png" alt="" height="25px" width="25px"> 
-									<span style="padding: 0px 5px; font-size: 25px;" >Typescript</span>
+									<img src="https://img.icons8.com/color/48/000000/typescript.png" alt=""
+										height="25px" width="25px">
+									<span style="padding: 0px 5px; font-size: 25px;">Typescript</span>
 								</Row>
 							</Button>
 						</ul> <br>
 
-						<ul> <h4>Tools</h4>
-							<Button class ="resume-btn" size="md"  target="_blank">
+						<ul>
+							<h4>Tools</h4>
+							<Button class="resume-btn" size="md" target="_blank">
 								<Row>
-									<img src="/static/images/git.svg" alt="" height="25px" width="25px"> 
-									<span style="padding: 0px 5px; font-size: 25px;" >Git</span>
+									<img src="/static/images/git.svg" alt="" height="25px" width="25px">
+									<span style="padding: 0px 5px; font-size: 25px;">Git</span>
 								</Row>
 							</Button>
-							<Button class ="resume-btn" size="md"  target="_blank">
+							<Button class="resume-btn" size="md" target="_blank">
 								<Row>
-									<img src="/static/images/github.svg" alt="" height="25px" width="25px"> 
-									<span style="padding: 0px 5px; font-size: 20px;" >GitHub</span>
+									<img src="/static/images/github.svg" alt="" height="25px" width="25px">
+									<span style="padding: 0px 5px; font-size: 20px;">GitHub</span>
 								</Row>
 							</Button>
-							<Button class ="resume-btn" size="md"  target="_blank">
+							<Button class="resume-btn" size="md" target="_blank">
 								<Row>
-									<img src="/static/images/heroku.svg" alt="" height="25px" width="25px"> 
-									<span style="padding: 0px 5px; font-size: 20px;" >Heroku</span>
+									<img src="/static/images/heroku.svg" alt="" height="25px" width="25px">
+									<span style="padding: 0px 5px; font-size: 20px;">Heroku</span>
 								</Row>
 							</Button>
-							<Button class ="resume-btn" size="md"  target="_blank">
+							<Button class="resume-btn" size="md" target="_blank">
 								<Row>
-									<img src="/static/images/postman.png" alt="" height="25px" width="25px"> 
-									<span style="padding: 0px 5px; font-size: 20px;" >Postman</span>
+									<img src="/static/images/postman.png" alt="" height="25px" width="25px">
+									<span style="padding: 0px 5px; font-size: 20px;">Postman</span>
 								</Row>
 							</Button>
-							
+
 						</ul>
 
 					</div>
-					<h5> <a target="_blank" href="{% static 'resume.pdf' %}">Check my Résumé <br> <img src="https://img.icons8.com/color/48/000000/document--v2.png"/></a></h5>
+					<h5> <a target="_blank" href="{% static 'resume.pdf' %}">Check my Résumé <br> <img
+								src="https://img.icons8.com/color/48/000000/document--v2.png" /></a></h5>
 
-					
+
 
 				</div>
 
-				
+
 				<div class="social-links">
 					<img id="social_img" src="{% static 'images/follow.jpg' %}"> <br> <br>
 					<!-- <h4>Find me on <a class="badge-base__link LI-simple-link" href="https://ke.linkedin.com/in/levy-omolo-43236222a?trk=profile-badge"><img src="https://img.icons8.com/external-justicon-flat-justicon/64/000000/external-linkedin-social-media-justicon-flat-justicon.png" alt="" height="30px" width="30px"> Levy Omolo</a></h4> -->
-					<div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="dark" data-type="HORIZONTAL" data-vanity="levy-omolo" data-version="v1">
-						<h6><a class="badge-base__link LI-simple-link" href="https://ke.linkedin.com/in/levy-omolo?trk=profile-badge">Levy Omolo</a></h6>
+					<div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="dark"
+						data-type="HORIZONTAL" data-vanity="levy-omolo" data-version="v1">
+						<h6><a class="badge-base__link LI-simple-link"
+								href="https://ke.linkedin.com/in/levy-omolo?trk=profile-badge">Levy Omolo</a></h6>
 					</div>
-              
+
 					<h3>Find me on Twitter & Github</h3>
-					
-					<a target="_blank" href="https://github.com/omololevy"><img src="/static/images/github.svg" alt="" height="30px" width="30px"><br> @Levy Cotech</a><br>
+
+					<a target="_blank" href="https://github.com/omololevy"><img src="/static/images/github.svg" alt=""
+							height="30px" width="30px"><br> @Levy Cotech</a><br>
 					<br>
-					<a target="_blank" href="https://twitter.com/kaylor254"><img src="/static/images/twitter.svg" alt="" height="30px" width="30px"> <br> @kaylor254</a><br>
-					
+					<a target="_blank" href="https://twitter.com/kaylor254"><img src="/static/images/twitter.svg" alt=""
+							height="30px" width="30px"> <br> @kaylor254</a><br>
+
 
 				</div>
 			</div>
@@ -279,8 +287,11 @@
 							<h6 class="post-title">{{post.headline}}</h6>
 							<p class="post-intro">{{post.sub_headline}}</p>
 							<a href="{%  url 'post' post.slug %}">Read More<b>...</b></a>
-							<a href=" {{ post.livesite }}" style="float: right; margin-left: 5px;"><img src="https://img.icons8.com/color/48/000000/domain.png" alt="" height="30px" width="30px"/></a>
-							<a href="{{ post.GitHub }} " style="float: right;"><img src="/static/images/github.svg" alt="" height="30px" width="30px"></a>
+							<a href=" {{ post.livesite }}" style="float: right; margin-left: 5px;"><img
+									src="https://img.icons8.com/color/48/000000/domain.png" alt="" height="30px"
+									width="30px" /></a>
+							<a href="{{ post.GitHub }} " style="float: right;"><img src="/static/images/github.svg"
+									alt="" height="30px" width="30px"></a>
 						</div>
 					</div>
 				</div>
@@ -292,7 +303,7 @@
 			</p>
 		</div>
 	</section>
-	
+
 
 	<section class="s2">
 		<div class="main-container">
@@ -318,7 +329,7 @@
 				<input id="submit-btn" type="submit" value="Send">
 			</form>
 		</div>
-	</section> 
+	</section>
 
 
 
@@ -329,4 +340,5 @@
 
 	<script type="text/javascript" src="{% static 'js/script.js' %}"></script>
 </body>
+
 </html>
