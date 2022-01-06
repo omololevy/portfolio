@@ -25,13 +25,14 @@
 			<li><a href="{% url 'account' %}"> Account</a></li>
 			<li><a href="{% url 'logout' %}">Logout</a></li>
 		{% else %}
-			<li><a href="#about">About</a></li>
-			<li><a href="#">Education</a></li>
-			<li><a href="#">Skills</a></li>
+			<li><a href="{% url 'about' %}">About</a></li>
+			<li><a href="{% url 'education' %}">Education</a></li>
+			<li><a href="{% url 'skills' %}">Skills</a></li>
 			<li><a href="{% url 'posts' %}">Projects</a></li>
-			<li><a href="#">Expreience</a></li>
-			<li><a href="#">Achievements</a></li>
-			<li><a href="{% url 'home' %}#contact">Contact</a></li>
+			<li><a href="{% url 'experience' %}">Expreience</a></li>
+			<li><a href="{% url 'achievements' %}">Achievements</a></li>
+			<!-- <li><a href="{% url 'home' %}#contact">Contact</a></li> -->
+			<li><a href="{% url 'contact' %}">Contact</a></li>
 		{% endif %}
 	</ul>
 
