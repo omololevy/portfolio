@@ -1,0 +1,201 @@
+{% include 'base/main.html' %}
+{% load static %}
+{% block content %}
+
+<style type="text/css">
+	#user_pic {
+		height: 200px;
+		width: 200px;
+		border-radius: 50%;
+		border: 5px solid #888;
+		margin: 0 auto;
+		object-fit: cover;
+	}
+
+	#user-info-box {
+		text-align: center;
+	}
+
+	.resume-btn {
+		border-color: cyan;
+		margin-left: 4px;
+		margin-top: 6px;
+		border-radius: 15px;
+		background-color: transparent;
+		color: rgb(255, 255, 255);
+		text-align: center;
+	}
+
+	.resume-btn:hover {
+		background-color: rgb(85, 190, 171);
+		border-color: transparent;
+		color: black;
+	}
+</style>
+
+<div class="main-container">
+	<br>
+	<div class="row">
+		<div class="col-md-4 s1">
+			<div class="card card-body" id="user-info-box">
+				<img id="user_pic" src="{{profile.profile_pic.url}}">
+				<br>
+				<h2>{{profile}}</h2>
+				<p>Email: {{profile.email}}</p>
+				<hr>
+				<p>{{profile.bio}}</p>
+				<hr>
+				<a class="btn btn-info btn-block" href="{% url 'update_profile' %}">Edit Profile</a>
+			</div>
+		</div>
+		<div class="col-md-8 s1">
+			<div class="card card-body">
+				<h4>TOP SKILLS</h4>
+
+				<p>Full Stack developer with primary focus on Django + Angular.</p>
+
+				<div id="skills">
+					<ul>
+						<h4>Languages and Frameworks</h4>
+						<Button class="resume-btn" size="md" target="_blank">
+							<Row>
+								<img src="/static/images/python.svg" alt="" height="25px" width="25px">
+								<span style="padding: 0px 5px; font-size: 25px;">Python</span>
+							</Row>
+						</Button>
+						<Button class="resume-btn" size="md" target="_blank">
+							<Row>
+								<img src="https://img.icons8.com/external-tal-revivo-filled-tal-revivo/96/000000/external-django-a-high-level-python-web-framework-that-encourages-rapid-development-logo-filled-tal-revivo.png"
+									alt="" height="25px" width="25px">
+								<span style="padding: 0px 5px; font-size: 25px;">Django</span>
+							</Row>
+						</Button>
+						<Button class="resume-btn" size="md" target="_blank">
+							<Row>
+								<img src="https://img.icons8.com/ios/100/000000/flask.png" alt="" height="30px"
+									width="30px">
+								<span style="padding: 0px 5px; font-size: 25px;">Flask</span>
+							</Row>
+						</Button>
+						<Button class="resume-btn" size="md" target="_blank">
+							<Row>
+								<img src="/static/images/javascript.svg" alt="" height="25px" width="25px">
+								<span style="padding: 0px 5px; font-size: 25px;">Javascript</span>
+							</Row>
+						</Button>
+						<Button class="resume-btn" size="md" target="_blank">
+							<Row>
+								<img src="/static/images/jquery.svg" alt="" height="25px" width="25px">
+								<span style="padding: 0px 5px; font-size: 25px;">JQuery</span>
+							</Row>
+						</Button>
+						<Button class="resume-btn" size="md" target="_blank">
+							<Row>
+								<img src="/static/images/angularjs.svg" alt="" height="25px" width="25px">
+								<span style="padding: 0px 5px; font-size: 25px;">Angular</span>
+							</Row>
+						</Button>
+						<Button class="resume-btn" size="md" target="_blank">
+							<Row>
+								<img src="/static/images/postgresql.svg" alt="" height="25px" width="25px">
+								<span style="padding: 0px 5px; font-size: 25px;">Postgresql</span>
+							</Row>
+						</Button>
+						<Button class="resume-btn" size="md" target="_blank">
+							<Row>
+								<img src="/static/images/html-5.svg" alt="" height="25px" width="25px">
+								<span style="padding: 0px 5px; font-size: 25px;">HTML</span>
+							</Row>
+						</Button>
+						<Button class="resume-btn" size="md" target="_blank">
+							<Row>
+								<img src="/static/images/css3.svg" alt="" height="25px" width="25px">
+								<span style="padding: 0px 5px; font-size: 25px;">CSS</span>
+							</Row>
+						</Button>
+						<Button class="resume-btn" size="md" target="_blank">
+							<Row>
+								<img src="/static/images/bootstrap.svg" alt="" height="25px" width="25px">
+								<span style="padding: 0px 5px; font-size: 25px;">Bootstrap</span>
+							</Row>
+						</Button>
+						<Button class="resume-btn" size="md" target="_blank">
+							<Row>
+								<img src="https://img.icons8.com/color/48/000000/typescript.png" alt="" height="25px"
+									width="25px">
+								<span style="padding: 0px 5px; font-size: 25px;">Typescript</span>
+							</Row>
+						</Button>
+					</ul> <br>
+
+					<ul>
+						<h4>Tools</h4>
+						<Button class="resume-btn" size="md" target="_blank">
+							<Row>
+								<img src="/static/images/git.svg" alt="" height="25px" width="25px">
+								<span style="padding: 0px 5px; font-size: 25px;">Git</span>
+							</Row>
+						</Button>
+						<Button class="resume-btn" size="md" target="_blank">
+							<Row>
+								<img src="/static/images/github.svg" alt="" height="25px" width="25px">
+								<span style="padding: 0px 5px; font-size: 20px;">GitHub</span>
+							</Row>
+						</Button>
+						<Button class="resume-btn" size="md" target="_blank">
+							<Row>
+								<img src="/static/images/heroku.svg" alt="" height="25px" width="25px">
+								<span style="padding: 0px 5px; font-size: 20px;">Heroku</span>
+							</Row>
+						</Button>
+						<Button class="resume-btn" size="md" target="_blank">
+							<Row>
+								<img src="/static/images/postman.png" alt="" height="25px" width="25px">
+								<span style="padding: 0px 5px; font-size: 20px;">Postman</span>
+							</Row>
+						</Button>
+
+					</ul>
+
+				</div>
+				<h5> <a target="_blank" href="{% static 'resume.pdf' %}">Check my Résumé <br> <img
+							src="https://img.icons8.com/color/48/000000/document--v2.png" /></a></h5>
+
+			</div>
+		</div>
+	</div>
+</div>
+<!-- JAVASCRIPTS -->
+<script type="text/javascript">
+	let searchForm = document.getElementById('searchForm')
+	let pageLinks = document.getElementsByClassName('page-link')
+
+	for (var i = 0; pageLinks.length > i; i++) {
+
+		pageLinks[i].addEventListener('click', function (e) {
+			e.preventDefault()
+			let page = this.dataset.page
+			console.log('Page:', page)
+			searchForm.innerHTML += `<input value="${page}" name="page" hidden >`
+			searchForm.submit()
+		})
+
+	}
+</script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+
+	function gtag() {
+		dataLayer.push(arguments);
+	}
+	gtag('js', new Date());
+
+	gtag('config', 'UA-47692315-56');
+</script>
+
+<script type="text/javascript">
+	let static = "{% static 'css' %}"
+</script>
+
+<script type="text/javascript" src="{% static 'js/script.js' %}"></script>
+{% endblock content %}
