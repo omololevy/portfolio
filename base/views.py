@@ -178,6 +178,7 @@ def logoutUser(request):
 	logout(request)
 	return redirect('home')
 
+@admin_only
 @login_required(login_url="home")
 def userAccount(request):
 	profile = request.user.profile
@@ -203,3 +204,21 @@ def updateProfile(request):
 
 	context = {'form':form}
 	return render(request, 'base/profile_form.html', context)
+
+def myEducation(request):
+	return render(request, 'base/education.html')
+
+def myExperience(request):
+	return render(request, 'base/experience.html')
+
+def myAchievements(request):
+	return render(request, 'base/achievements.html')
+
+def myAbout(request):
+    return render(request, 'base/about.html')
+
+def myContact(request):
+    return render(request, 'base/contact.html')
+
+def mySkills(request):
+    return render(request, 'base/skills.html')
