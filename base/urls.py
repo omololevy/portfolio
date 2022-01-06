@@ -20,6 +20,12 @@ urlpatterns = [
 	path('register/', views.registerPage, name="register"),
 	path('logout/', views.logoutUser, name="logout"),
 
+	path('about/', views.myAbout, name="about"),
+	path('skills/', views.mySkills, name="skills"),
+	path('contact/', views.myContact, name="contact"),
 	path('account/', views.userAccount, name="account"),
+	path('education/', views.myEducation, name="education"),
+	path('experience/', views.myExperience, name="experience"),
+	path('achievements/', views.myAchievements, name="achievements"),
 	path('update_profile/', views.updateProfile, name="update_profile"),
 ]
