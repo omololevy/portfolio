@@ -22,51 +22,39 @@
 	<div class="row">
 		<div class="col-md-4">
 			<div class="card card-body" id="user-info-box">
-				<img id="user_pic" src="{{profile.profile_pic.url}}">
+				<img id="profile_pic" src="{% static 'images/Levy.jpg' %}">
 				<br>
-				<h2>{{profile}}</h2>
-				<p>Email: {{profile.email}}</p>
+				<h5>Full Stack Developer</h5>
 				<hr>
-				<p>{{profile.bio}}</p>
-				<hr>
-				<a class="btn btn-info btn-block" href="{% url 'update_profile' %}">Edit Profile</a>
+				<a class="btn btn-info btn-block" href="{% url 'contact' %}">Hire me</a>
 			</div>
 		</div>
 		<div class="col-md-8">
 			<div class="card card-body">
-				<h3>My Plans:</h3>
+				<h3>Achievements:</h3>
 				<hr>
 				<table class="table">
 					<thead class="thead-dark">
 						<tr>
-							<th>Activity</th>
-							<th>Location</th>
-							<th>Start-date</th>
-							<th>Period (in months)</th>
-							<th>End-date</th>
-							<th>Award</th>
+							<th>Period</th>
+							<th>Company</th>
+							<th>Role</th>
 							<th>More</th>
 							<th></th>
 						</tr>
 					</thead>
 					<tr>
-						<td>Moringa SD</td>
-						<td>Nairobi</td>
-						<td>17-08-2021</td>
-						<td>5</td>
-						<td>14-2-2022</td>
-						<td>Certificate</td>
-						<td><a class="btn btn-dark btn-sm" href="">View Plan</a></td>
+						<td>2021 to date</td>
+						<td>Company X</td>
+						<td>Software Dev</td>
+						<td><a class="btn btn-dark btn-sm" href="">View</a></td>
 					</tr>
 
 					<tr>
-						<td>Maseno BScCS</td>
-						<td>Kisumu</td>
-						<td>14-02-2022</td>
-						<td>7</td>
-						<td>14-9-2022</td>
-						<td>Degree</td>
-						<td><a class="btn btn-dark btn-sm" href="">View Plan</a></td>
+						<td>2020 - 2021</td>
+						<td>Company Y</td>
+						<td>Software Dev</td>
+						<td><a class="btn btn-dark btn-sm" href="">View</a></td>
 					</tr>
 				</table>
 			</div>
