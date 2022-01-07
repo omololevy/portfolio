@@ -38,14 +38,11 @@
 	<div class="row">
 		<div class="col-md-4 s1">
 			<div class="card card-body" id="user-info-box">
-				<img id="user_pic" src="{{profile.profile_pic.url}}">
+				<img id="profile_pic" src="{% static 'images/Levy.jpg' %}">
 				<br>
-				<h2>{{profile}}</h2>
-				<p>Email: {{profile.email}}</p>
+				<h5>Full Stack Developer</h5>
 				<hr>
-				<p>{{profile.bio}}</p>
-				<hr>
-				<a class="btn btn-info btn-block" href="{% url 'update_profile' %}">Edit Profile</a>
+				<a class="btn btn-info btn-block" href="{% url 'contact' %}">Hire me</a>
 			</div>
 		</div>
 		<div class="col-md-8 s1">
