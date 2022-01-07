@@ -24,6 +24,7 @@
 	{% if request.user.is_staff %}
 	<a class="btn btn-info" href="{% url 'create_post' %}">Create Post</a>
 	{% endif %}
+	
 	<form id="searchForm" method="GET">
 		{{myFilter.form|crispy}}
 
@@ -100,6 +101,19 @@
 	</div>
 </div>
 <!-- JAVASCRIPTS -->
+<script type="text/javascript">
+	var Tawk_API = Tawk_API || {},
+		Tawk_LoadStart = new Date();
+	(function () {
+		var s1 = document.createElement("script"),
+			s0 = document.getElementsByTagName("script")[0];
+		s1.async = true;
+		s1.src = 'https://embed.tawk.to/61d08b4d80b2296cfdd49e96/1foba0as1';
+		s1.charset = 'UTF-8';
+		s1.setAttribute('crossorigin', '*');
+		s0.parentNode.insertBefore(s1, s0);
+	})();
+</script>
 <script type="text/javascript">
 	let searchForm = document.getElementById('searchForm')
 	let pageLinks = document.getElementsByClassName('page-link')
