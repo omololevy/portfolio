@@ -1,5 +1,5 @@
 # My-portfolio
-
+![Image](/static/images/portfoliocover.png)
 ## Description
 A Python-Django portfolio website about me, my career journey and projects that I've worked on.
 
