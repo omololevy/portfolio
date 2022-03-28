@@ -49,7 +49,7 @@ def post(request, slug):
 			post=post,
 			body=request.POST['comment']
 			)
-		messages.success(request, "You're comment was successfuly posted!")
+		messages.success(request, "Your comment has been posted successfully!")
 
 		return redirect('post', slug=post.slug)
 
