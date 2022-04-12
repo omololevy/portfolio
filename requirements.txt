@@ -7,7 +7,7 @@ charset-normalizer==2.0.9
 cloudinary==1.25.0
 distlib==0.3.4
 dj-database-url==0.5.0
-Django==3.2.9
+Django==3.2.13
 django-ckeditor==5.9.0
 django-cloudinary-storage==0.3.0
 django-crispy-forms==1.9.2
