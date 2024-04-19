@@ -29,7 +29,7 @@
     </form>
     <br>
     <div class="post-wrapper">
-
+        {% if posts %}
         {% for post in posts %}
         <div>
             <div class="post">
@@ -50,9 +50,10 @@
                 </div>
             </div>
         </div>
-        {% empty %}
-            <h3>No posts found...</h3>
         {% endfor %}
+        {% else %}
+            <h3>No posts found...</h3>
+        {% endif %}
     </div>
 
     <div class="row">

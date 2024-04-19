@@ -45,3 +45,6 @@ urllib3==2.2.1
 virtualenv==20.25.3
 virtualenv-clone==0.5.7
 whitenoise==6.6.0
+
+pip install django-crispy-forms
+pip install crispy-bootstrap4
